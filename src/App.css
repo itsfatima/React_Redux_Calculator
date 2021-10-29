@@ -1,0 +1,60 @@
+* { 
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #0b0b14;
+}
+.App { 
+  font-size: 24px;
+  color:#fff;
+}
+.calc-container {
+  background-color: #000000;
+  border: solid black 1px;
+  padding: .5rem;
+}
+#root,.App {
+  width: inherit;
+  height: inherit;
+}
+#formula {
+  padding: 1rem 1rem 0 1rem;
+  font-size: 16px;
+}
+#display {
+  padding: 0 1rem 1rem 1rem;
+}
+.key, .operator {
+  padding: 1rem;
+}
+.key:hover, .qual:hover, .clear:hover {
+  color: black;
+  outline: .05em solid white;
+  z-index: 3;
+  cursor: pointer;
+}
+.clear {
+  background-color: #AC3939;
+  border: solid black 1px;
+}
+.number, .decimal {
+  background-color: #4D4D4D;
+  border: solid black 1px;
+}
+.equal {
+  border: solid black 1px;
+  background-color: #d39f0f
+}
+.operator {
+  border: solid black 1px;
+  background-color: #666666
+}
+@media (max-width: 768px) {
+  .calc-container {
+    width: 50%!important;
+  }
+}
